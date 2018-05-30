@@ -1,0 +1,65 @@
+.ring-progress {
+	position: relative;
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+}
+
+.percent-circle {
+	position: absolute;
+	height: 100%;
+	overflow: hidden;
+	background: #178EE7;
+}
+
+.percent-circle-right {
+	right: 0;
+	width: 100px;
+	border-radius: 0 100px 100px 0/0 100px 100px 0;
+}
+
+.percent-circle-right .right-content {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	transform-origin: left center;
+	transform: rotate(0deg);
+	border-radius: 0 100px 100px 0/0 100px 100px 0;
+	background: #bbb;
+}
+
+.percent-circle-left {
+	width: 100px;
+	border-radius: 100px 0 0 100px/100px 0 0 100px;
+}
+
+.percent-circle-left .left-content {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	transform-origin: right center;
+	transform: rotate(0deg);
+	border-radius: 100px 0 0 100px/100px 0 0 100px;
+	background: #bbb;
+}
+
+.ring-inner {
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	height: 80%;
+	width: 80%;
+	left: 10%;
+	top: 10%;
+	border-radius: 100%;
+	background: white;
+	color: #6D6D6D;
+	text-align: center;
+}
+
+.ring-inner .content:first-child {
+	padding-top: 30%;
+	font-size: 30px;
+}
